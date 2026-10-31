@@ -1,14 +1,13 @@
-# Contenuto di requirements.txt
-
-# Forza pip a cercare prima nell'indice CPU-only di PyTorch
+# Versions verified on 2026-10-31 with Python 3.12 (see README).
+# scikit-learn is pinned to the version the model artifacts were pickled with.
+# Force pip to look in the CPU-only PyTorch index first.
 --extra-index-url https://download.pytorch.org/whl/cpu
 
-# Dipendenze (torch sarà scaricato dall'indice CPU)
-torch
-dash
-plotly
-numpy
-scipy
-scikit-learn
-joblib
-gunicorn
+torch==2.15.0+cpu
+dash==4.5.0
+plotly==7.1.0
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.7.2
+joblib==1.6.0
+gunicorn==26.2.0
